@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll Here</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: rgb(240, 172, 0);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="number"]:focus,
+        select:focus {
+            border-color: rgb(240, 172, 0);
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(240, 172, 0);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e5b100;
+        }
+    </style>
+</head>
+<body>
+    <h1>ENROLL HERE</h1>
+    <form action="success.html">
+        <label>Name</label>
+        <input type="text" name="Name" placeholder="Enter your fullname" required>
+
+        <label>Select your Qualification</label>
+        <select>
+            <option>B.E</option>
+            <option>B.Tech</option>
+            <option>B.Sc</option>
+            <option>MCA</option>
+            <option>BCA</option>
+        </select>
+
+        <label>Select your Stream</label>
+        <select>
+            <option>CSE</option>
+            <option>IT</option>
+            <option>EEE</option>
+            <option>ECE</option>
+            <option>AI</option>
+        </select>
+
+        <label>Mail Id</label>
+        <input type="email" name="Mail id" placeholder="Enter your email" required>
+
+        <label>Mobile Number</label>
+        <input type="number" name="mobile number" placeholder="Enter your mobile number" required>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
